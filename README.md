@@ -1,5 +1,5 @@
 # Movie Ratings Stream
-This is meant to be a simple golang based service to generate a constant stream of random ratings for random list of movies. 
+A sample service intended to demonstrate a microservices environment. This service generates a constant stream of random ratings for random list of movies. 
 
 In order to build this, please use the following command: 
 
