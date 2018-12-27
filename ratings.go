@@ -83,7 +83,7 @@ func (s *SSE) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 			log.Println("Done: Closed connection")
 			return
 		case msg := <-messages:
-			fmt.Fprintf(rw, "{\"data\": %s}\n\n", msg)
+			fmt.Fprintf(rw, "{\"data\": %s}\r\n", msg)
 			f.Flush()
 		}
 	}
